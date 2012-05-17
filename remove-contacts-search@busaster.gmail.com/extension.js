@@ -1,8 +1,8 @@
 const Main = imports.ui.main;
 
-let recentItemsProvider = null;
+let contactsProvider = null;
 
-function getRecentItemsProvider() {
+function getContactsProvider() {
     let providers = Main.overview._viewSelector._searchTab._searchSystem._providers;
     
     for (let i = 0; i < providers.length; i++) {
@@ -14,13 +14,13 @@ function getRecentItemsProvider() {
 }
 
 function init() {
-    recentItemsProvider = getRecentItemsProvider();
+    contactsProvider = getContactsProvider();
 }
 
 function enable() {
-    Main.overview.removeSearchProvider(recentItemsProvider);
+    Main.overview.removeSearchProvider(contactsProvider);
 }
 
 function disable() {
-    Main.overview.addSearchProvider(recentItemsProvider);
+    Main.overview.addSearchProvider(contactsProvider);
 }
