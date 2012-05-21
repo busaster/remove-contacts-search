@@ -1,4 +1,4 @@
-{"shell-version": ["3.2", "3.3" ,"3,4"], 
+{"shell-version": ["3.2", "3.3" ,"3.4"], 
 "uuid": "remove-contacts-search@busaster.gmail.com", 
 "name": "Remove Contacts Search Provider", 
 "description": "Removes contacts search provider from overview",
